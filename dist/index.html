@@ -16,39 +16,39 @@
   </head>
   <body class="bg-violet">
     <!-- Header -->
-    <header class="container mx-auto mb-10">
+    <header class="container mx-auto mb-10 md:mb-0">
       <nav class="p-6">
-        <img src="images/logo.svg" alt="Logo" class="w-42 h-12" />
+        <img src="images/logo.svg" alt="Logo" class="w-42 h-12 md:w-46 h-16" />
       </nav>
     </header>
 
     <!-- Main -->
-    <main class="mb-20">
-      <div class="container mx-auto px-6 grid grid-col-1">
+    <main class="mb-20 md:h-screen md:mb-0">
+      <!-- Grid / Container -->
+      <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 md:h-screen md:justify-items-center md:content-center">
+        <!-- Grid Item -->
         <div>
           <img src="images/illustration-mockups.svg" alt="Main Image" class="w-full mb-14" />
         </div>
-        <div class="flex flex-col">
-          <h1 class="font-poppins text-white text-center text-2xl max-w-xs mx-auto font-medium mb-6">Build The Community<br />Your Fans Will Love</h1>
-          <p class="text-white text-center mx-auto max-w-sm font-extralight text-base mb-6">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
-          <button class="rounded-full bg-white px-20 py-2 mx-auto text-lg text-violet shadow-lg hover:bg-magenta hover:text-white shadow-3xl">Register</button>
+        <!-- Grid Item -->
+        <div class="flex flex-col mb-10 md:justify-start md:pt-8">
+          <h1 class="font-poppins text-white text-center text-2xl max-w-xs mx-auto font-medium mb-6 md:text-justify md:m-0 md:mb-6 md:text-5xl md:max-w-xl">Build The Community<br />Your Fans Will Love</h1>
+          <p class="text-white text-center mx-auto max-w-sm font-extralight text-lg mb-6 md:text-left md:max-w-xl">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
+          <button class="rounded-full bg-white px-20 py-2 mx-auto text-lg text-violet text-center shadow-lg hover:bg-magenta hover:text-white shadow-3xl md:m-0 md:max-w-xs md:w-44 md:px-6">Register</button>
+        </div>
+        <!-- Grid Item -->
+        <div class="flex flex-row justify-center h-full w-full md:col-start-2 md:col-end-3 md:justify-end">
+          <span class="mx-3 border-2 border-white rounded-full h-10 w-10 flex justify-center items-center cursor-pointer hover:border-magenta">
+            <i class="fa-brands fa-facebook-f text-white hover:text-magenta"></i>
+          </span>
+          <span class="mx-3 border-2 border-white rounded-full h-10 w-10 flex justify-center items-center cursor-pointer hover:border-magenta">
+            <i class="fa-brands fa-twitter text-white hover:text-magenta"></i>
+          </span>
+          <span class="mx-3 border-2 border-white rounded-full h-10 w-10 flex justify-center items-center cursor-pointer hover:border-magenta">
+            <i class="fa-brands fa-instagram text-white hover:text-magenta"></i>
+          </span>
         </div>
       </div>
     </main>
-
-    <!-- Footer -->
-    <footer class="">
-      <div class="container mx-auto px-8 flex justify-center">
-        <span class="mx-3 border-2 border-white rounded-full h-10 w-10 flex justify-center items-center">
-          <i class="fa-brands fa-facebook-f text-white"></i>
-        </span>
-        <span class="mx-3 border-2 border-white rounded-full h-10 w-10 flex justify-center items-center">
-          <i class="fa-brands fa-twitter text-white"></i>
-        </span>
-        <span class="mx-3 border-2 border-white rounded-full h-10 w-10 flex justify-center items-center">
-          <i class="fa-brands fa-instagram text-white"></i>
-        </span>
-      </div>
-    </footer>
   </body>
 </html>
